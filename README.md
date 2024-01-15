@@ -12,4 +12,4 @@ But I have limited credits left for OpenAI API key (free account, you know 😶)
 
 Finally, deployed the website on Google Firebase console 🔥.
 
-Wanna try, visit : https://doodle-story-generator.web.app/
+Wanna try, visit : https://doodle-story-gen.web.app/
