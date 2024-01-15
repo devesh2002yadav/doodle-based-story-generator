@@ -10,6 +10,6 @@ So I made a webapp where user can draw some doodles, then DoodleNet will classif
 
 But I have limited credits left for OpenAI API key (free account, you know 😶), so generate story function will give output only till credits are remaining.
 
-Finally, deployed the HTML, CSS and JS website on Google Firebase console 🔥.
+Finally, deployed the website on Google Firebase console 🔥.
 
 Wanna try, visit : https://doodle-story-generator.web.app/
