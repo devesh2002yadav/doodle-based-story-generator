@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://kit.fontawesome.com/7c8801c017.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+</head>
+<body>
+  <div class="twinkling-stars"></div>
+
+  <h1>Doodle based Story Generator</h1>
+  <div id="drawing-area">
+    <div id="drawing-board"></div>
+    <div id="controls">
+      <button class="button" id="clear">Clear</button>
+      <button class="button" id="save">Save Doodle</button>
+    </div>
+  </div>
+  <div id="doodle-list"></div>
+  <button class="button" id="process">Show Doodles</button>
+  <button class="button" id="generateStory" >Generate Story</button>
+  <button class="button" id="downloadStory" >Download story</button>
+  <div id="loading-message">
+    <div id="loading-spinner"></div>
+  </div>
+  <div id="story-container" class="paper-background">
+    <div id="story"></div>
+  </div>
+  <div id="contact-icons">
+    <a href="https://www.linkedin.com/in/devesh-yadav-nnl" target="_blank" class="icon-link"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+    <a href="mailto:devesh.yad02@gmail.com" target="_blank" class="icon-link"><img src="images/gmail_icon.png" alt="Gmail"></a>
+    <a href="https://github.com/devesh2002yadav" target="_blank" class="icon-link"><img src="images/github_icon.png" alt="GitHub"></a>
+    <div id="info-icon" class="icon-link"><img src="images/info_icon.png" alt="Info"></div>
+  </div> 
+  <script src="script.js"></script>
+</body>
+</html>

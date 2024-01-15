@@ -1,0 +1,255 @@
+body {
+  font-family: 'Nunito';
+  background: url('images/bg_img_15.png') ;
+  background-size: cover; 
+  text-align: center;
+  font-size: 18px;
+}
+
+/* drawing-area */
+
+#drawing-area {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);  
+  margin: 0 auto;
+  height: 480px; 
+  width: 500px;
+  padding-bottom: 30px; 
+  margin-bottom: 25px;
+}
+
+#controls {
+  padding: 15px 0;
+}
+
+#controls {
+  display: flex;
+  justify-content: center; 
+}
+
+/* Buttons */
+
+.button {
+  margin: 10px;
+  background-color: #fff;
+  color: #5ec5f1; 
+  border: 2px solid #5ec5f1;
+  padding: 12px 20px;
+  border-radius: 15px; 
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #5ec5f1;
+  color: #fff;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+#process, #generateStory, #downloadStory {
+  background-color: #5ec5f1;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  display: inline-block; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+#process:hover, #generateStory:hover, #downloadStory:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+#process,
+#generateStory,
+#downloadStory {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+/* canvas */
+
+#drawing-board {
+  border: 4px solid #5ec5f1;
+  border-radius: 15px;
+  margin-top: 0px;
+  background-color: #fff;
+}
+
+#canvas {
+  background: #fff;
+}
+
+/* Doodles */ 
+
+#doodle-list {  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  
+  margin-bottom: 25px;
+}
+
+.doodle-img {
+  width: 150px;
+  margin: 20px;
+  border: 4px solid #414141;
+  border-radius: 10px;
+}
+
+/* story-board */
+
+.paper-background {
+  width: 75%;
+  margin: 0 auto;
+  color: #a43737a3;
+  background-color: #fffbf3; 
+  padding: 20px; 
+  border: 4px solid #a43737a3;
+  border-radius: 10px;
+  margin-top: 25px; 
+  margin-bottom: 200px;
+}
+
+#story {
+  font-family: 'Montserrat';
+  font-size: 18px; 
+  line-height: 1.6; 
+  color: #484848;
+}
+
+/* loader */
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loading-spinner {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 5px solid #5ec5f1;
+  border-radius: 50%;
+  border-top: 5px solid #161616;
+  animation: rotate 1s linear infinite;
+  margin-right: 5px;
+}
+
+/* footer-line */
+#made-by {
+  color: #5ec5f1;
+  margin-bottom: 100px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  text-align: center;
+  animation: twinkling_n 1.5s infinite;
+}
+
+@keyframes twinkling_n {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* links and info icon */
+
+#contact-icons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#info-icon {
+  position: fixed;
+  top: 40px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#contact-icons a, #info-icon {
+  margin-right: 10px;
+  display: inline-block; 
+  transition: transform 0.3s ease-in-out;
+}
+
+#contact-icons a:hover, #info-icon:hover {
+  transform: scale(1.2); 
+}
+
+#contact-icons img, #info-icon img {
+  width: 30px; 
+  height: auto;
+}
+
+#info-icon::before {
+  content: "Limited credits are available for generate story function, so you may not get a response if all credits are exhausted. sorry😞";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  display: none;
+  font-size: 12px; 
+  width: 150px; 
+  height: 80px;
+  text-align: left; 
+}
+
+#info-icon:hover::before {
+  display: block;
+}
+
+/* twinkling stars animation */
+
+.twinkling-star {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #5ec5f1;
+  border-radius: 50%;
+  animation: twinkling 1.5s infinite;
+  opacity: 0; 
+}
+
+@keyframes twinkling {
+  0%, 100% {
+    opacity: 0.1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes colorTransition {
+  0%, 100% {
+    background-color: #5EC5F1;
+  }
+  20% {
+    background-color: #5EF17E;
+  }
+  40% {
+    background-color: #F1EB5E;
+  }
+  60% {
+    background-color: #F1815E;
+  }
+  80% {
+    background-color: #E55EF1;
+  }
+}
+
